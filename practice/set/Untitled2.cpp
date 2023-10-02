@@ -18,14 +18,14 @@ int main()
     int l=9;
     auto it1=s.lower_bound(l);
     if(it1==s.end())
-        cout<<"The element is larger to the Greater Element of the SET"<<endl;
+        cout<<"The element is larger to the Greater(Smaller because it's reverse) Element of the SET"<<endl;
     else
         cout<<"The lower bound of "<<l<<" is "<<*it1<<endl;
 
-    int ll=15;
+    int ll=0;
     auto it2=s.upper_bound(ll);
     if(it2==s.end())
-        cout<<"The element is larger or equal to the Greater Element of the SET"<<endl;
+        cout<<"The element is larger or equal to the Greater(Smaller because it's reverse) Element of the SET"<<endl;
     else
         cout<<"The upper bound of "<<ll<<" is "<<*it2<<endl;
 
